@@ -19,15 +19,11 @@ export class AppComponent implements OnInit {
   }
 
   searchHotels() {
-    this.hotelService.getHotels().subscribe((data) => {
-      this.hotels = data;
-    });
+    this.hotelService.getHotels().subscribe((data) => { this.hotels = data; });
   }
 
   searchHotel(hotelName: string) {
-    this.hotelService.getHotelByName(hotelName).subscribe(data => {
-      this.hotels = data;
-    });
+    this.hotelService.getHotelByName(hotelName).subscribe(data => { this.hotels = data; });
   }
 
 }

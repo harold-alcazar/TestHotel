@@ -1,4 +1,4 @@
-
+﻿
 ***************Instrucciones para ejecutar la prueba**********************
 * Se construyo una API REST la cual se encarga de exponer los endpoints con el crud de datos.
 * Como base de datos se implemento mongodb en donde se hizo una importacion del archivo data.json sumistrado para la prueba
@@ -22,5 +22,7 @@
 5. La API REST se encuentra en la carpeta "AlmundoApi". Abrir una consola de windows a la ruta de dicha carpeta y ejecutar con el comando "npm start" para 
 	iniciar el servicio con los respectivos endpoints que contienen el CRUD de los datos.
 	
-6. El proyecto FRONT se encuentra en la carpeta "appAlmundo". Abrir una consola de windows a la ruta de dicha carpeta y ejecutar con el comando "ng serve --open"
-	para compilar e iniciar la aplicacion en el navegador.
+6. El proyecto FRONT se encuentra en la carpeta "appAlmundo". Abrir una consola de windows a la ruta de dicha carpeta:
+	ejecutar el comando "npm install" para descargar todas las dependencias usadas	 
+	entrar a la carpeta appAlmundo\src y ejecutar con el comando "ng serve --open" para compilar e iniciar la aplicacion en el navegador.
+
