@@ -1,0 +1,81 @@
+.header{
+    background-color: #022f77;
+}
+
+.checked{
+    color: orange;
+}
+
+.card {
+    background: #fff;
+    border-radius: 3px;
+    width: 100%;
+    position: relative;
+    padding: 15px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 3px #c1c1c1;
+}
+
+.card-filter {
+    background: #fff;
+    border-radius: 3px;
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    box-shadow: 1px 1px 3px #c1c1c1;
+}
+
+.image-size {
+    width: 100%; 
+    height: 170px;
+}
+
+.hotel-info {
+    border-right: 1px dotted gray;
+}
+
+.button {
+	background-color:#2f3790;
+	cursor:pointer;
+	color:#ffffff;
+}
+
+.hotel-title {
+    color: #287bef;
+    font-weight: bold;
+    font-size: small;
+}
+
+.price-info {
+    text-align: center;
+}
+
+.price {
+    color: orange;
+}
+
+.font-size-price-text {
+    font-size: 13px;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.input {
+    width: 100%;
+}
+
+.image-icon {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.backColor {
+    background-color: #f3f3f3;
+}
+
+.all-star-text {
+    font-weight: bold;
+    font-size: 9px;
+}

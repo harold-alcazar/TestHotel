@@ -1,0 +1,114 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 header">
+      <img src="../assets/images/logo-almundo.svg" alt="logo">
+    </div>
+  </div>
+  <div class="row backColor">
+    <div class="col-sm-3">
+      <div class="row">
+        <div class="col-sm-12 card-filter">
+          <strong>Filtros</strong>
+        </div>
+        <div class="col-sm-12 card">
+          <div class="row">
+            <div class="col-sm-8 hotel-title padding-10">
+              <img class="image-icon" src="../assets/icons/filters/search.svg">Nombre de hotel
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-7">
+              <input class="input" type="text" name="hotelName" #hotelName placeholder="Ingrese el nombre del hotel">
+            </div>
+            <div class="col-sm-5">
+              <button class="button" type="button" (click)='searchHotel(hotelName.value)'>Aceptar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 card">
+          <div class="row">
+            <div class="col-sm-12 hotel-title padding-10">
+              <img class="image-icon" src="../assets/icons/filters/star.svg">Estrellas
+            </div>
+            <div class="col-sm-12 all-star-text">
+              <input type="checkbox" class="image-icon"> Todas las estrellas
+            </div>
+            <div class="col-sm-12">
+              <input type="checkbox" class="image-icon">
+              <span class="fa fa-star checked image-icon"></span>
+              <span class="fa fa-star checked image-icon"></span>
+              <span class="fa fa-star checked image-icon"></span>
+              <span class="fa fa-star checked image-icon"></span>
+              <span class="fa fa-star checked image-icon"></span>
+            </div>
+            <div class="col-sm-12">
+              <input type="checkbox" class="image-icon">
+              <span class="fa fa-star checked image-icon"></span>
+              <span class="fa fa-star checked image-icon"></span>
+              <span class="fa fa-star checked image-icon"></span>
+              <span class="fa fa-star checked image-icon"></span>
+            </div>
+            <div class="col-sm-12">
+              <input type="checkbox" class="image-icon">
+              <span class="fa fa-star checked image-icon"></span>
+              <span class="fa fa-star checked image-icon"></span>
+              <span class="fa fa-star checked image-icon"></span>
+            </div>
+            <div class="col-sm-12">
+              <input type="checkbox" class="image-icon">
+              <span class="fa fa-star checked image-icon"></span>
+              <span class="fa fa-star checked image-icon"></span>
+            </div>
+            <div class="col-sm-12">
+              <input type="checkbox" class="image-icon">
+              <span class="fa fa-star checked image-icon"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-9">
+      <div class="card" *ngFor='let hotel of hotels'>
+        <div class="row">
+          <div class="col-sm-4">
+            <img src='../assets/images/hotels/{{hotel.image}}' class="image-size">
+          </div>
+          <div class="col-sm-5 hotel-info">
+            <div class="row">
+              <div class="col-sm-12">
+                <h6 class="hotel-title">{{hotel.name}}</h6>
+              </div>
+              <div class="col-sm-12">
+                <span class="fa fa-star checked image-icon" *ngFor="let i of [].constructor(hotel.stars)"></span>
+              </div>
+              <div class="col-sm-12">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <span *ngFor="let amenitie of hotel.amenities">
+                      <img src='../assets/icons/amenities/{{amenitie}}.svg' class="image-icon">
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="row price-info padding-10">
+              <div class="col-sm-12 font-size-price-text">
+                Precio por noche por habitación
+              </div>
+              <div class="col-sm-12 padding-10">
+                <span class="price">
+                  <h5>ARS <strong>{{hotel.price}}</strong></h5>
+                </span>
+              </div>
+              <div class="col-sm-12 padding-10">
+                <button class="button">Ver hotel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
